@@ -194,6 +194,31 @@ let fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
 console.log(fruits.include('Orange'));//true
 console.log(fruits.include('plum'));//false
 
+<h1>Using the reverse() method</h1>
+
+let arr = [1,2,3,4,5,6,7,8];
+arr.reverse();
+alert(arr);//8,7,6,5,4,3,2,1
+
+<h1>split()</h1>
+
+<p>This splits the string into an array by the given delimiter.</p>
+
+let names = 'Bilbo', Gandalf, Nazgul';
+
+let arr = names.split(', ');
+
+for (let name of arr) {
+    alert(`A message to ${name}.` ); //A message to Bilbo 
+}
+
+Example 2:  splits into letters
+
+let str = "test";
+
+alert( str.split('') ); //t,e,s,t
+
+<h1></h1>
 
 
 

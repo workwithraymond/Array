@@ -54,6 +54,10 @@ Example 4
       return value % 2 == 0;
     }
 
+let game = [11, 98, 31, 23, 944].filter(isEven);
+    console.log(game); //98, 944
+
+
     
 
 
