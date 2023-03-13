@@ -218,7 +218,41 @@ let str = "test";
 
 alert( str.split('') ); //t,e,s,t
 
-<h1></h1>
+<h1>join()</h1>
+<p>The join method does the reverse to split. It creates a string of arr items joined by glue
+between them</p>
+
+Example 1:
+
+let arr = ['Bilbo', 'Gandalf', 'Nazgul'];
+
+let str = arr.join(';'); // glue the array into a string using ;
+
+alert(str); // Bilbo;Gandalf;Nazgul
+
+<h1>reduce()</h1>
+<p>reduce is used to calculate a single value based on the array.</p>
+
+let value = arr.reduce(function(accumulator, item, index, array) {
+
+}, [initial]);
+
+<ul>
+    <li>accumulator - is the result of the previous function call, 
+    equals initial the first time (if the initial is provided).</li>
+    <li>item - is the current array item.</li>
+    <li>index - is its position</li>
+    <li>array - is the array</li>
+    
+
+</ul>
+
+let arr = [1, 2, 3, 4, 5];
+
+let result = arr.reduce((sum, current) => sum + current, 0);
+
+alert(result); //15
+
 
 
 
